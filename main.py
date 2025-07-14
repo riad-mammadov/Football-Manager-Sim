@@ -5,7 +5,6 @@ man_utd_players = [
     Player("Harry Maguire", "Defender", 80),
     Player("Bruno Fernandes", "Midfielder", 88),
     Player("Marcus Rashford", "Forward", 85),
-    # add more players as needed
 ]
 
 # Arsenal players
@@ -14,7 +13,6 @@ arsenal_players = [
     Player("Gabriel Magalhaes", "Defender", 82),
     Player("Martin Odegaard", "Midfielder", 84),
     Player("Bukayo Saka", "Forward", 86),
-    # add more players as needed
 ]
 
 united = Team('Manchester United', man_utd_players)
