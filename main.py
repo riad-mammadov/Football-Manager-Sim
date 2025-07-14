@@ -1,4 +1,4 @@
-from model import Player, Team, Match
+from classes.model import Player, Team, Match
 
 man_utd_players = [
     Player("Andre Onana", "Goalkeeper", 82),
