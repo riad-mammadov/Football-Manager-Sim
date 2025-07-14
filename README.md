@@ -10,7 +10,7 @@ A Python based Football Manager simulation that models football teams, players, 
 - Track player performance (e.g. goals scored, assists — WIP)
 - Planned GUI interface (coming soon)
 - Future deployment
-- + Many more features to be planned
+- Many more features to be planned and added
 
 ## 🧠 How It Works
 
