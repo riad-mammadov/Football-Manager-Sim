@@ -5,6 +5,7 @@ class Player:
         self.name = name
         self.position = position
         self.rating = rating
+        self.goals = 0
 
 class Match:
     def __init__(self,team1,team2):
@@ -31,11 +32,15 @@ class Match:
         drawProb = 0.15
 
         if x < drawProb:
-            print(f"{self.team1} draws against {self.team2}")
+            print(f"{self.team1.name} draws against {self.team2.name}")
         elif x < drawProb + homeProb * (1 - drawProb):
-            print(f"{self.team1} wins against {self.team2}")
+            print(f"{self.team1.name} wins against {self.team2.name}")
         else:
-            print(f"{self.team2} wins against {self.team1}")
+            print(f"{self.team2.name} wins against {self.team1.name}")
+
+        
+        
+    
                 
 
 class Team:
