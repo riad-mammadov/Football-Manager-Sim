@@ -11,6 +11,8 @@ for t in team_data:
     team = Team(t["name"], players)
     teams.append(team)
 
+dashboard = ["View Squad", "View Fixtures", "Play Next Game", "Save & Exit"]
+
 
 
 
