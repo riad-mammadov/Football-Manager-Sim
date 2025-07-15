@@ -46,18 +46,47 @@ class Match:
         homeGoals, awayGoals = 0, 0
 
         stats = {}
+
+        # For each home chance they have, generates a random int 0-1 and checks if their goal probability is above the int
+        # The higher the goal probability, the more chance of scoring a goal
         for _ in range(homeChances):
             if random.random() < homeGoalProb:
                 homeGoals += 1
+                self.team1.goals += 1
+                minute = random.randint(1,90)
                 scorer = getScorer(self.team1.players)
-                stats[scorer] = stats.get(scorer, 0) + 1
-                print(f"The goalscorers for the home team were: {list(stats.keys())}")
 
-        print(f"{self.team1.name} : {homeChances}, {self.team2.name} : {awayChances}")
-        
-        
-    
+                if scorer not in stats:
+                    stats[scorer] = {"goals": 0, "minutes": []}
+
+                stats[scorer]["goals"] += 1
+                stats[scorer]["minutes"].append(minute)
                 
+
+
+        for _ in range(awayChances):
+            if random.random() < awayGoalProb:
+                awayGoals += 1
+                self.team2.goals += 1
+                scorer = getScorer(self.team2.players)
+                minute = random.randint(1,90)
+
+                if scorer not in stats:
+                    stats[scorer] = {"goals": 0, "minutes": []}
+
+                stats[scorer]["goals"] += 1
+                stats[scorer]["minutes"].append(minute)
+        
+        finalScore = f"{self.team1.name} {homeGoals} - {awayGoals} {self.team2.name}"
+        goalScorers = ""
+        for scorer, data in stats.items():
+            name = scorer
+            minutes = "' ".join(str(minute) for minute in data["minutes"])
+            goalScorers += f"{name} - {minutes}' \n\n"
+        
+        print(finalScore)
+        print(goalScorers)
+                  
 
 class Team:
     def __init__(self, name, players):
