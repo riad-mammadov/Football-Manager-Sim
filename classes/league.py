@@ -1,11 +1,16 @@
 import random
-
+class Manager:
+    def __init__(self,name,team):
+        self.name = name
+        self.team = team
 class Player:
     def __init__(self,name,position,rating):
         self.name = name
         self.position = position
         self.rating = rating
         self.goals = 0
+    def __str__(self):
+        return(self.name)
 
 # Match class with a simulate method, takes in a match instance and outputs a result based on team rating and random probability
 # ensuring that games arent completely one sided
@@ -28,9 +33,6 @@ class Match:
 
         home = average["home"]
         away = average["away"]
-
-        homeProb = home / (home + away)       
-        awayProb = away / (away + home)
 
         # Each team will get chances depending on their team strength using the gauss formula
         # chances will be around the mean mark, with a wider range of 2 for unpredictability, max 1 to prevent chances falling below 1
@@ -94,8 +96,11 @@ class Team:
         self.players = players
         self.points = 0
         self.goals = 0
+    
+    def __str__(self):
+        return(self.name)
 
+## Gets the goalscorer for the match
 def getScorer(players):
-    ## gets a player in team that scored exluding goalkeepers (first entry)
     x = random.randint(1, len(players)-1)
     return players[x].name
