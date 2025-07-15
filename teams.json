@@ -1,0 +1,237 @@
+[
+  {
+    "name": "Arsenal",
+    "players": [
+      { "name": "David Raya", "position": "GK", "rating": 82 },
+      { "name": "William Saliba", "position": "CB", "rating": 84 },
+      { "name": "Gabriel Magalhães", "position": "CB", "rating": 83 },
+      { "name": "Ben White", "position": "RB", "rating": 81 },
+      { "name": "Oleksandr Zinchenko", "position": "LB", "rating": 80 },
+      { "name": "Declan Rice", "position": "CDM", "rating": 89 },
+      { "name": "Martin Ødegaard", "position": "CAM", "rating": 87 },
+      { "name": "Kai Havertz", "position": "CM", "rating": 81 },
+      { "name": "Bukayo Saka", "position": "RW", "rating": 88 },
+      { "name": "Gabriel Martinelli", "position": "LW", "rating": 84 },
+      { "name": "Gabriel Jesus", "position": "ST", "rating": 83 }
+    ]
+  },
+  {
+    "name": "Aston Villa",
+    "players": [
+      { "name": "Emiliano Martínez", "position": "GK", "rating": 83 },
+      { "name": "Ezri Konsa", "position": "CB", "rating": 82 },
+      { "name": "Mings", "position": "CB", "rating": 80 },
+      { "name": "Matty Cash", "position": "RB", "rating": 81 },
+      { "name": "Lucas Digne", "position": "LB", "rating": 81 },
+      { "name": "Douglas Luiz", "position": "CM", "rating": 84 },
+      { "name": "John McGinn", "position": "CM", "rating": 83 },
+      { "name": "Jacob Ramsey", "position": "CM", "rating": 80 },
+      { "name": "Ollie Watkins", "position": "ST", "rating": 85 },
+      { "name": "Philippe Coutinho", "position": "CAM", "rating": 82 },
+      { "name": "Leon Bailey", "position": "RW", "rating": 81 }
+    ]
+  },
+  {
+    "name": "Bournemouth",
+    "players": [
+      { "name": "Mark Travers", "position": "GK", "rating": 78 },
+      { "name": "Chris Mepham", "position": "CB", "rating": 80 },
+      { "name": "Adam Smith", "position": "RB", "rating": 79 },
+      { "name": "Lloyd Kelly", "position": "CB", "rating": 79 },
+      { "name": "Jordan Zemura", "position": "LB", "rating": 78 },
+      { "name": "Philip Billing", "position": "CM", "rating": 80 },
+      { "name": "Lewis Cook", "position": "CM", "rating": 79 },
+      { "name": "Ryan Christie", "position": "CAM", "rating": 81 },
+      { "name": "Dominic Solanke", "position": "ST", "rating": 82 },
+      { "name": "Vitali****", "position": "FW", "rating": 77 },
+      { "name": "Kieffer Moore", "position": "ST", "rating": 80 }
+    ]
+  },
+  {
+    "name": "Brentford",
+    "players": [
+      { "name": "Mark Flekken", "position": "GK", "rating": 79 },
+      { "name": "Kristoffer Ajer", "position": "CB", "rating": 81 },
+      { "name": "Ethan Pinnock", "position": "CB", "rating": 80 },
+      { "name": "Mads Roerslev", "position": "RB", "rating": 81 },
+      { "name": "Aaron Hickey", "position": "LB", "rating": 81 },
+      { "name": "Josh Dasilva", "position": "CM", "rating": 80 },
+      { "name": "Christian Nørgaard", "position": "CDM", "rating": 81 },
+      { "name": "Mathias Jensen", "position": "CM", "rating": 81 },
+      { "name": "Bryan Mbeumo", "position": "ST", "rating": 82 },
+      { "name": "Evan Ferguson", "position": "ST", "rating": 81 },
+      { "name": "Yoane Wissa", "position": "ST", "rating": 80 }
+    ]
+  },
+  {
+    "name": "Brighton",
+    "players": [
+      { "name": "Robert Sanchez", "position": "GK", "rating": 81 },
+      { "name": "Lewis Dunk", "position": "CB", "rating": 83 },
+      { "name": "Yves Bissouma", "position": "CDM", "rating": 82 },
+      { "name": "Pervis Estupiñán", "position": "LB", "rating": 80 },
+      { "name": "Jeremy Sarmiento", "position": "RW", "rating": 79 },
+      { "name": "Kaoru Mitoma", "position": "LW", "rating": 82 },
+      { "name": "Alexis Mac Allister", "position": "CM", "rating": 84 },
+      { "name": "Pascal Groß", "position": "CAM", "rating": 81 },
+      { "name": "Danny Welbeck", "position": "ST", "rating": 80 },
+      { "name": "Mitch Pinnock", "position": "ST", "rating": 79 },
+      { "name": "Joel Veltman", "position": "RB", "rating": 81 }
+    ]
+  },
+  {
+    "name": "Chelsea",
+    "players": [
+      { "name": "Edouard Mendy", "position": "GK", "rating": 82 },
+      { "name": "Thiago Silva", "position": "CB", "rating": 84 },
+      { "name": "Wesley Fofana", "position": "CB", "rating": 82 },
+      { "name": "Reece James", "position": "RB", "rating": 84 },
+      { "name": "Ben Chilwell", "position": "LB", "rating": 83 },
+      { "name": "Mason Mount", "position": "CAM", "rating": 82 },
+      { "name": "Enzo Fernández", "position": "CM", "rating": 83 },
+      { "name": "Cole Palmer", "position": "RW", "rating": 85 },
+      { "name": "Christopher Nkunku", "position": "ST", "rating": 86 },
+      { "name": "Noni Madueke", "position": "LW", "rating": 82 },
+      { "name": "Carney Chukwuemeka", "position": "CM", "rating": 81 }
+    ]
+  },
+  {
+    "name": "Crystal Palace",
+    "players": [
+      { "name": "Vicente Guaita", "position": "GK", "rating": 76 },
+      { "name": "Marc Guéhi", "position": "CB", "rating": 82 },
+      { "name": "Joel Ward", "position": "RB", "rating": 78 },
+      { "name": "Tyrick Mitchell", "position": "LB", "rating": 79 },
+      { "name": "Jairo Riedewald", "position": "CB", "rating": 78 },
+      { "name": "Conor Gallagher", "position": "CM", "rating": 83 },
+      { "name": "Jean-Philippe Mateta", "position": "ST", "rating": 80 },
+      { "name": "Michael Olise", "position": "RW", "rating": 83 },
+      { "name": "Eberechi Eze", "position": "CAM", "rating": 83 },
+      { "name": "Odsonne Édouard", "position": "ST", "rating": 82 },
+      { "name": "Will Hughes", "position": "CM", "rating": 80 }
+    ]
+  },
+  {
+    "name": "Everton",
+    "players": [
+      { "name": "Jordan Pickford", "position": "GK", "rating": 82 },
+      { "name": "Mason Holgate", "position": "CB", "rating": 79 },
+      { "name": "Jarrad Branthwaite", "position": "CB", "rating": 83 },
+      { "name": "Seamus Coleman", "position": "RB", "rating": 80 },
+      { "name": "Vitalii Mykolenko", "position": "LB", "rating": 79 },
+      { "name": "Amadou Onana", "position": "CDM", "rating": 82 },
+      { "name": "Alex Iwobi", "position": "CM", "rating": 80 },
+      { "name": "Dominic Calvert-Lewin", "position": "ST", "rating": 82 },
+      { "name": "Anthony Gordon", "position": "RW", "rating": 81 }
+    ]
+  },
+  {
+    "name": "Fulham",
+    "players": [
+      { "name": "Bernd Leno", "position": "GK", "rating": 81 },
+      { "name": "Issa Diop", "position": "CB", "rating": 80 },
+      { "name": "Tim Ream", "position": "CB", "rating": 79 },
+      { "name": "Kenny Tete", "position": "RB", "rating": 78 },
+      { "name": "Antonee Robinson", "position": "LB", "rating": 79 },
+      { "name": "João Palhinha", "position": "CDM", "rating": 84 },
+      { "name": "Andreas Pereira", "position": "CM", "rating": 82 },
+      { "name": "Harry Wilson", "position": "RW", "rating": 80 },
+      { "name": "Aleksandar Mitrović", "position": "ST", "rating": 85 },
+      { "name": "Bobby De Cordova-Reid", "position": "LW", "rating": 79 },
+      { "name": "Tom Cairney", "position": "CM", "rating": 78 }
+    ]
+  },
+  {
+    "name": "Liverpool",
+    "players": [
+      { "name": "Alisson Becker", "position": "GK", "rating": 90 },
+      { "name": "Virgil van Dijk", "position": "CB", "rating": 89 },
+      { "name": "Trent Alexander-Arnold", "position": "RB", "rating": 87 },
+      { "name": "Andrew Robertson", "position": "LB", "rating": 86 },
+      { "name": "Fabinho", "position": "CDM", "rating": 85 },
+      { "name": "Thiago Alcântara", "position": "CM", "rating": 87 },
+      { "name": "Mohamed Salah", "position": "RW", "rating": 91 },
+      { "name": "Luis Díaz", "position": "LW", "rating": 84 },
+      { "name": "Cody Gakpo", "position": "ST", "rating": 83 },
+      { "name": "Darwin Núñez", "position": "ST", "rating": 84 },
+      { "name": "Dominik Szoboszlai", "position": "CAM", "rating": 82 }
+    ]
+  },
+  {
+    "name": "Manchester City",
+    "players": [
+      { "name": "Ederson", "position": "GK", "rating": 89 },
+      { "name": "Ruben Dias", "position": "CB", "rating": 88 },
+      { "name": "John Stones", "position": "CB", "rating": 87 },
+      { "name": "João Cancelo", "position": "RB", "rating": 86 },
+      { "name": "Nathan Aké", "position": "LB", "rating": 85 },
+      { "name": "Rodri", "position": "CDM", "rating": 87 },
+      { "name": "Kevin De Bruyne", "position": "CM", "rating": 91 },
+      { "name": "Phil Foden", "position": "LW", "rating": 86 },
+      { "name": "Erling Haaland", "position": "ST", "rating": 91 },
+      { "name": "Jack Grealish", "position": "RW", "rating": 84 },
+      { "name": "Bernardo Silva", "position": "CAM", "rating": 88 }
+    ]
+  },
+  {
+    "name": "Manchester United",
+    "players": [
+      { "name": "Andre Onana", "position": "GK", "rating": 85 },
+      { "name": "Leny Yoro", "position": "CB", "rating": 87 },
+      { "name": "Lisandro Martínez", "position": "CB", "rating": 85 },
+      { "name": "Diogo Dalot", "position": "RB", "rating": 82 },
+      { "name": "Luke Shaw", "position": "LB", "rating": 84 },
+      { "name": "Casemiro", "position": "CDM", "rating": 88 },
+      { "name": "Bruno Fernandes", "position": "CAM", "rating": 91 },
+      { "name": "Amad", "position": "RW", "rating": 86 },
+      { "name": "Marcus Rashford", "position": "LW", "rating": 86 },
+      { "name": "Rasmus Højlund", "position": "ST", "rating": 82 }
+    ]
+  },
+  {
+    "name": "Newcastle United",
+    "players": [
+      { "name": "Nick Pope", "position": "GK", "rating": 84 },
+      { "name": "Kieran Trippier", "position": "RB", "rating": 85 },
+      { "name": "Sven Botman", "position": "CB", "rating": 84 },
+      { "name": "Fabian Schär", "position": "CB", "rating": 83 },
+      { "name": "Dan Burn", "position": "LB", "rating": 81 },
+      { "name": "Bruno Guimarães", "position": "CDM", "rating": 86 },
+      { "name": "Sean Longstaff", "position": "CM", "rating": 80 },
+      { "name": "Miguel Almirón", "position": "RW", "rating": 82 },
+      { "name": "Alexander Isak", "position": "ST", "rating": 85 },
+      { "name": "Callum Wilson", "position": "ST", "rating": 84 },
+      { "name": "Anthony Gordon", "position": "LW", "rating": 81 }
+    ]
+  },
+  {
+    "name": "Nottingham Forest",
+    "players": [
+      { "name": "Matt Turner", "position": "GK", "rating": 78 },
+      { "name": "Joe Worrall", "position": "CB", "rating": 80 },
+      { "name": "Scott McKenna", "position": "CB", "rating": 79 },
+      { "name": "Neco Williams", "position": "RB", "rating": 81 },
+      { "name": "Omar Richards", "position": "LB", "rating": 78 },
+      { "name": "Ryan Yates", "position": "CDM", "rating": 80 },
+      { "name": "Morgan Gibbs-White", "position": "CAM", "rating": 82 },
+      { "name": "Taiwo Awoniyi", "position": "ST", "rating": 83 },
+      { "name": "Orel Mangala", "position": "CM", "rating": 81 },
+      { "name": "Brennan Johnson", "position": "RW", "rating": 84 }
+    ]
+  },
+  {
+    "name": "Tottenham Hotspur",
+    "players": [
+      { "name": "Guglielmo Vicario", "position": "GK", "rating": 82 },
+      { "name": "Cristian Romero", "position": "CB", "rating": 85 },
+      { "name": "Micky van de Ven", "position": "CB", "rating": 84 },
+      { "name": "Pedro Porro", "position": "RB", "rating": 83 },
+      { "name": "Destiny Udogie", "position": "LB", "rating": 82 },
+      { "name": "Yves Bissouma", "position": "CDM", "rating": 84 },
+      { "name": "James Maddison", "position": "CAM", "rating": 87 },
+      { "name": "Dejan Kulusevski", "position": "RW", "rating": 85 },
+      { "name": "Son Heung-min", "position": "LW", "rating": 88 },
+      { "name": "Richarlison", "position": "ST", "rating": 83 }
+    ]
+  }
+]
