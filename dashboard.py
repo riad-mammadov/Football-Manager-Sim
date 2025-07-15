@@ -1,3 +1,4 @@
+from setup import dashboard
 def getDashboard():
     for i, opt in enumerate(dashboard, 1):
         print(f"{i}: {opt}")
