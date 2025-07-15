@@ -1,23 +1,36 @@
-from classes.model import Player, Team, Match
+from classes.league import Player, Team, Match, Manager
+from setup import *
 
-man_utd_players = [
-    Player("Andre Onana", "Goalkeeper", 82),
-    Player("Harry Maguire", "Defender", 80),
-    Player("Bruno Fernandes", "Midfielder", 88),
-    Player("Marcus Rashford", "Forward", 85),
-]
+season = 0
+gamesPlayed = 0
 
-# Arsenal players
-arsenal_players = [
-    Player("David Raya", "Goalkeeper", 83),
-    Player("Gabriel Magalhaes", "Defender", 82),
-    Player("Martin Odegaard", "Midfielder", 84),
-    Player("Bukayo Saka", "Forward", 86),
-]
+# if season == 0 and gamesPlayed == 0:
+#     name = input("Whats your name? ")
 
-united = Team('Manchester United', man_utd_players)
-arsenal =Team('Arsenal', arsenal_players)
+#     for i,team in enumerate(teams, 1):
+#         print(f"{i}: {team}")
+    
+#     while True:
+#         try:
+#             choice = int(input("What number team would you like to manage? "))
+#             if 1 <= choice <= len(teams):
+#                 selectedTeam = teams[choice-1]
+#                 break
+#             else:
+#                 print("Enter a number within the range ")
+            
+#         except ValueError:
+#             print("Please enter a valid number ")
 
-gw1 = Match(united,arsenal)
 
-Match.sim(gw1)
+# user = Manager(name, selectedTeam)
+
+# print(f"Welcome to {user.team.name}, {name}! We are really excited to have you here and cant wait for you to get started!")
+
+for i, opt in enumerate(dashboard, 1):
+    print(opt)
+
+
+# gw1 = Match(teams[4],teams[10])
+
+# Match.sim(gw1)
