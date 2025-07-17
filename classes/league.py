@@ -3,6 +3,60 @@ class Manager:
     def __init__(self,name,team):
         self.name = name
         self.team = team
+
+class League:
+    def __init__(self,name,teams):
+        self.name = name
+        self.teams = teams
+    
+    def generateFixtures(self):
+
+        num_teams = len(self.teams)
+        num_rounds = (num_teams - 1) * 2
+        half = num_teams // 2
+        schedule = []
+
+        team_list = self.teams[:]
+
+        # First half of the season
+        for round in range(num_teams - 1):
+            matchday = []
+            for i in range(half):
+                team1 = team_list[i]
+                team2 = team_list[-(i + 1)]
+                matchday.append((team1, team2))
+            schedule.append(matchday)
+            team_list = [team_list[0]] + [team_list[-1]] + team_list[1:-1]
+
+        # reverse fixtures
+        second_half = [[(away, home) for (home, away) in gw] for gw in schedule]
+        schedule.extend(second_half)
+
+        return schedule
+    
+    def assignSchedule(self):
+        full_schedule = self.generateFixtures()
+
+        for team in self.teams:
+            team.schedule = []
+
+        # Assigns matches to teams
+        for round_number, matchday in enumerate(full_schedule, start=1):
+            for home_team, away_team in matchday:
+                home_team.schedule.append({
+                    'gameweek': round_number,
+                    'homeTeam': home_team,
+                    'awayTeam': away_team,
+                    'home_or_away': 'Home'
+                })
+                away_team.schedule.append({
+                    'gameweek': round_number,
+                    'homeTeam': home_team,
+                    'awayTeam': away_team,
+                    'home_or_away': 'Away'
+                })
+
+
 class Player:
     def __init__(self,name,position,rating):
         self.name = name
@@ -91,12 +145,13 @@ class Match:
                   
 
 class Team:
-    def __init__(self, name, players):
+    def __init__(self, name, players,schedule = None):
         self.name = name
         self.players = players
+        self.schedule = schedule if schedule is not None else []
         self.points = 0
-        self.goals = 0
-    
+        self.goals = 0        
+
     def __str__(self):
         return(self.name)
 
