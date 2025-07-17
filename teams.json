@@ -126,22 +126,6 @@
     ]
   },
   {
-    "name": "Fulham",
-    "players": [
-      { "name": "Bernd Leno", "position": "GK", "rating": 81 },
-      { "name": "Issa Diop", "position": "CB", "rating": 80 },
-      { "name": "Tim Ream", "position": "CB", "rating": 79 },
-      { "name": "Kenny Tete", "position": "RB", "rating": 78 },
-      { "name": "Antonee Robinson", "position": "LB", "rating": 79 },
-      { "name": "João Palhinha", "position": "CDM", "rating": 84 },
-      { "name": "Andreas Pereira", "position": "CM", "rating": 82 },
-      { "name": "Harry Wilson", "position": "RW", "rating": 80 },
-      { "name": "Aleksandar Mitrović", "position": "ST", "rating": 85 },
-      { "name": "Bobby De Cordova-Reid", "position": "LW", "rating": 79 },
-      { "name": "Tom Cairney", "position": "CM", "rating": 78 }
-    ]
-  },
-  {
     "name": "Liverpool",
     "players": [
       { "name": "Alisson Becker", "position": "GK", "rating": 90 },
