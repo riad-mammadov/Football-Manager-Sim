@@ -1,6 +1,6 @@
 # ⚽ Football Manager Simulator (Python)
 
-A Python based Football Manager simulation that models football teams, players, and matches with probabilistic outcomes. This is a personal side project aimed at exploring OOP design, simulations, and will later include a GUI interface and deployment.
+A Python based Football Manager simulation that models football teams, players, and matches with probabilistic outcomes. This is a personal side project aimed at exploring OOP design, simulations, and will later include a GUI interface (+ possible deployment).
 
 ## 🚀 Features (+ to be added)
 
