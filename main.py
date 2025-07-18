@@ -2,9 +2,6 @@ from classes.league import Player, Team, Match, Manager, League
 from setup import *
 from dashboard import *
 
-season = 0
-gamesPlayed = 0
-
 def startGame():
     name = input("Whats your name? ")
     print("\n")
@@ -23,17 +20,18 @@ def startGame():
         except ValueError:
             print("Please enter a valid number ")
     
-    return Manager(name, selectedTeam)
+    return Manager(name, selectedTeam, 1)
 
-if season == 0 and gamesPlayed == 0:
-    prem = League("Premier League", teams)
-    for team in teams:
-        team.league = prem
-    prem.generateFixtures()
-    prem.assignSchedule()
-    user = startGame()
-    print(f"\nWelcome to {user.team.name}, {user.name}! We are really excited to have you here and cant wait for you to get started!")
-    loopDashboard(user)
+
+prem = League("Premier League", teams)
+for team in teams:
+    team.league = prem
+prem.generateFixtures()
+prem.assignSchedule()
+user = startGame()
+print(f"\nWelcome to {user.team.name}, {user.name}! We are really excited to have you here and cant wait for you to get started!")
+loopDashboard(user)
+
 
 
 
