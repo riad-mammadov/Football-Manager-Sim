@@ -1,13 +1,16 @@
-
+from classes.league import Match
+import time
 dashboard = ["View Squad", "View Fixtures", "League Table", "Play Next Game", "Save & Exit"]
 
 def loopDashboard(user):
+    # Keeps dashboard active until quit option is selected
     while True:
         choice = getDashboard(user)
         if choice == 5:
             break
 
 def getDashboard(user):
+    # Main dashboard 
     print("\n")
     for i, opt in enumerate(dashboard, 1):
         print(f"{i}: {opt}")
@@ -33,27 +36,82 @@ def getDashboard(user):
         return "continue"
 
 def viewSquad(user):
+    # View player squad
     print(f"\n{user.team.name}'s Squad \n")
     for player in user.team.players:
         print(f"{player.position} - {player.name}")
 
 def viewFixtures(team):
+    # Get league fixtures
     print(f"{team.name}'s Fixtures \n")
     for fixture in team.schedule:
         print(f"Gameweek: {fixture['gameweek']}")
         print(f"{fixture['homeTeam'].name} vs {fixture['awayTeam'].name}\n")
 
 def leagueTable(league):
+    # get league table sorted in desc order
     print(f"\n{league.name} Table\n")
-    
     sorted_teams = sorted(league.teams, key=lambda t: t.points, reverse=True)
-    
     for idx, team in enumerate(sorted_teams, 1):
         print(f"{idx}. {team.name} - {team.points} pts")
         
 
-def playNext():
-    print
+def playNext(user):
+    # Gets fixture for current gameweek (per game = +1 to gameweek)
+    gameweek = user.week
+    schedule = user.team.schedule
+    currGames = [fixture for fixture in schedule if fixture['gameweek'] == gameweek]
+
+    for fixture in currGames:
+        print(f"\n{fixture['homeTeam'].name} vs {fixture['awayTeam'].name} ({fixture['home_or_away']}) \n")
+    
+    # create a match object 'game' to simulate the game
+    game = Match(fixture['homeTeam'], fixture['awayTeam'])
+   
+    print("Simulating Match...")
+    time.sleep(3) 
+    gameResult = game.sim()
+
+    # Track game result / stats
+    homeGoals = gameResult[0]['home']
+    awayGoals = gameResult[1]['away']
+
+    if homeGoals > awayGoals:
+        fixture['homeTeam'].points += 3
+    elif awayGoals > homeGoals:
+        fixture['awayTeam'].points += 3
+    else:
+        fixture['awayTeam'].points += 1
+        fixture['homeTeam'].points += 1
+    
+    # Get opposiiton team 
+    if fixture['homeTeam'] == user.team.name:
+        oppTeam = fixture['awayTeam']
+    else:
+        oppTeam = fixture['homeTeam']
+
+
+    # Combine both teams players to avoid redundant loops
+    allPlayers = user.team.players + oppTeam.players
+
+    # Update goal stat for each player object
+    for playerName, stats in gameResult[2].items():
+        for player in allPlayers:
+            if player.name == playerName:
+                player.goals += stats['goals']
+                print (f"{player.name} - {player.goals} goal(s)")
+                break
+       
+
+
+
+    
+
+
+    
+
+    
+
 
 def handleQuit():
     pass
