@@ -1,8 +1,10 @@
 import random
 class Manager:
-    def __init__(self,name,team):
+    def __init__(self,name,team,week):
         self.name = name
         self.team = team
+        self.week = week
+        
 
 class League:
     def __init__(self,name,teams):
@@ -138,10 +140,12 @@ class Match:
         for scorer, data in stats.items():
             name = scorer
             minutes = "' ".join(str(minute) for minute in data["minutes"])
-            goalScorers += f"{name} - {minutes}' \n\n"
+            goalScorers += f"{name} - {minutes}' \n"
         
-        print(finalScore)
+        print(finalScore + "\n")
         print(goalScorers)
+        results = [{'home': homeGoals}, {'away':awayGoals}, stats]
+        return results
                   
 
 class Team:
