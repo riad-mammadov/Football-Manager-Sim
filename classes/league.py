@@ -145,10 +145,11 @@ class Match:
                   
 
 class Team:
-    def __init__(self, name, players,schedule = None):
+    def __init__(self,name, players,schedule = None, league = None,):
         self.name = name
         self.players = players
         self.schedule = schedule if schedule is not None else []
+        self.league = league if league is not None else ""
         self.points = 0
         self.goals = 0        
 
