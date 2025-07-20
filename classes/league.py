@@ -135,15 +135,13 @@ class Match:
                 stats[scorer]["goals"] += 1
                 stats[scorer]["minutes"].append(minute)
         
-        finalScore = f"{self.team1.name} {homeGoals} - {awayGoals} {self.team2.name}"
         goalScorers = ""
         for scorer, data in stats.items():
             name = scorer
             minutes = "' ".join(str(minute) for minute in data["minutes"])
             goalScorers += f"{name} - {minutes}' \n"
         
-        print(finalScore + "\n")
-        print(goalScorers)
+        
         results = [{'home': homeGoals}, {'away':awayGoals}, stats]
         return results
                   
@@ -164,3 +162,4 @@ class Team:
 def getScorer(players):
     x = random.randint(1, len(players)-1)
     return players[x].name
+
