@@ -1,7 +1,8 @@
 from classes.league import Match
 import time
 import sys
-dashboard = ["View Squad", "View Fixtures", "League Table", "Play Next Game", "Save & Exit"]
+from gamestate import *
+dashboard = ["View Squad", "View Fixtures", "League Table", "Play Next Game", "Save & Exit", "Delete Save"]
 
 def loopDashboard(user):
     # Keeps dashboard active until quit option is selected
@@ -27,6 +28,10 @@ def getDashboard(user):
             elif choice == 4:
                 playNext(user)
             elif choice == 5:
+                save_game(user)
+                sys.exit()
+            elif choice == 6:
+                delete_game()
                 sys.exit()
             return "continue"
         else:
