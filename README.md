@@ -2,15 +2,13 @@
 
 A Python based Football Manager simulation that models football teams, players, and matches with probabilistic outcomes. This is a personal side project aimed at exploring OOP design, simulations, and will later include a GUI interface (+ possible deployment).
 
-## 🚀 Features (+ to be added)
+## 🚀 Features
 
 - Teams with real individual players, positions, and dynamic skill ratings
 - Simulate matches between two teams using probabilistic outcomes based on team strength
 - Includes randomness to ensure realistic results (better teams don’t always win)
-- Track player performance (e.g. goals scored, assists — WIP)
-- Planned GUI interface (coming soon)
-- Future deployment
-- Many more features to be planned and added
+- Track player performance (e.g. goals scored, assists)
+- Save / Load game
 
 ## 🧠 How It Works
 
@@ -20,23 +18,8 @@ A Python based Football Manager simulation that models football teams, players, 
   - Takes into account average team rating
   - Adds a draw chance
   - Simulates outcomes: win, lose, or draw
-- Transfers and Budegt will be added to the game aswell
-- Planning of adding a Champions League & Europa League to the game
-- Possibility of individual awards to be added i.e Balon D'or, Player of the season etc...
- 
+
 ## 🛠 Technologies (so far)
 
-- Python 3.x
+- Python
 - Object-Oriented Programming (OOP)
-
-
-## 🎯 Future Plans
-
-- [ ] Match score tracking
-- [ ] League & season simulation
-- [ ] Player form, fatigue, and stats
-- [ ] GUI
-- [ ] Cup fixtures
-- [ ] Transfers and Club budget
-
-      
